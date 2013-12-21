@@ -1,17 +1,21 @@
-<nav class="navbar navbar-inverse navbar-default" role="navigation">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="contatiner">  
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navba--ex1-collapse">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Pinteresting</a>
+    <%= link_to "Pinteresting", root_path, class: "navbar-brand" %>
   </div>
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav navbar-right">
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "About", about_path %></li> 
+      <li><%= link_to"Contact Us", contactus_path %></li>
     </ul>
   </div>
+  <div>
 </nav>
